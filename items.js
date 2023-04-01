@@ -11,7 +11,7 @@ const basketball = [
     },
     {
       name: "Basketball Shorts",
-      price: 300,
+      price: 80000,
       img_src: "assets/basket_celana.png",
     },
     {

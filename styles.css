@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+}
+
+.top-container {
+    background-color: rgb(255, 113, 113);
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-style: oblique;
+    margin-left: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 60vw;
+    height: 40px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.button-container {
+    display: flex;
+    border: 5px solid white;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 32px;
+    padding: 0px 16px;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    background: white;
+    cursor: pointer;
+    margin-left: 10px;
+    color: rgb(255, 113, 113);
+}
+
+.login-signup {
+    border: 0;
+    font-weight: 800;
+    font-family: Helvetica, sans-serif;
+    justify-content: center;
+    cursor: pointer;
+    color: rgb(255, 113, 113);
+    text-decoration: none;
+}
+
+.button-container:hover {
+    background: rgb(255, 113, 113);
+    color: white;
+    transition: 0.2s ease;
+}
+
+.button-container:hover p {
+    color: white;
+    transition: 0.2s ease;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+    outline: none;
+}
+
+main {
+    display: flex;
+    padding-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+table {
+    border-spacing: 20px;
+    margin: auto;
+}
+
+table th {
+    padding: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 113, 113);
+    color: white;
+    cursor: pointer;
+    border: 5px solid rgb(255, 113, 113);
+}
+
+table th:hover {
+    background-color: white;
+    color: rgb(255, 113, 113);
+    transition: 0.2s ease;
+}
+
+.item-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.item-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card-price {
+    color: #f00;
+}

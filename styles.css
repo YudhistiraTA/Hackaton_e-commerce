@@ -106,6 +106,11 @@ table th:hover {
     background-color: white;
     color: rgb(255, 113, 113);
     transition: 0.2s ease;
+    scale: 1.1;
+}
+
+table th:active {
+    scale: 1;
 }
 
 .selected-category {
@@ -134,6 +139,16 @@ table th:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.card:hover {
+    scale: 1.1;
+    transition: 0.2s ease;
+
+}
+
+.card:active {
+    scale: 1;
 }
 
 .card img {

@@ -41,6 +41,13 @@ function displayItems(items) {
     });
 }
 
+let current_selected = document.getElementById("basketball-category")
+function selection_toggler(selected_category) {
+    selected_category.classList.toggle("selected-category");
+    current_selected.classList.toggle("selected-category");
+    current_selected = selected_category;
+}
+
 displayItems(basketball);
 document.getElementById("basketball-category").addEventListener("click", function () {
     if (itemRow.hasChildNodes())

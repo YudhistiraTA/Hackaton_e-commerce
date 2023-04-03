@@ -108,6 +108,11 @@ table th:hover {
     transition: 0.2s ease;
 }
 
+.selected-category {
+    background-color: white;
+    color: rgb(255, 113, 113);
+}
+
 .item-table {
     width: 100%;
     border-collapse: collapse;

@@ -28,24 +28,18 @@
         </a>
     </header>
     <main>
-        <table>
-            <tr>
-                <th id="basketball-category" class="selected-category" onclick="selection_toggler(this)">
-                    Basketball
-                </th>
-                <th id="football-category" onclick="selection_toggler(this)">
-                    Football
-                </th>
-                <th id="badminton-category" onclick="selection_toggler(this)">
-                    Badminton
-                </th>
-            </tr>
-        </table>
-        <table id="item-table" class="item-table">
-            <tbody>
-                <tr id="item-row"></tr>
-            </tbody>
-        </table>
+        <div class="grid-container">
+            <div id="basketball-category" class="selected-category grid-item" onclick="selection_toggler(this)">
+                Basketball
+            </div>
+            <div id="football-category" class="grid-item" onclick="selection_toggler(this)">
+                Football
+            </div>
+            <div id="badminton-category" class="grid-item" onclick="selection_toggler(this)">
+                Badminton
+                </div>
+            </div>
+        <div id="item-table" class="item-table"></div>
         <script src="items.js"></script>
         <script src="scripts.js"></script>
     </main>

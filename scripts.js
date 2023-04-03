@@ -30,12 +30,14 @@ function createCard(item) {
     return card;
 }
 
-const itemRow = document.querySelector("#item-row");
+const itemRow = document.querySelector("#item-table");
 
 function displayItems(items) {
+    while (itemRow.firstChild)
+        itemRow.removeChild(itemRow.firstChild);
     items.forEach((item) => {
         const card = createCard(item);
-        const tableCell = document.createElement("td");
+        const tableCell = document.createElement("div");
         tableCell.appendChild(card);
         itemRow.appendChild(tableCell);
     });
@@ -50,19 +52,13 @@ function selection_toggler(selected_category) {
 
 displayItems(basketball);
 document.getElementById("basketball-category").addEventListener("click", function () {
-    if (itemRow.hasChildNodes())
-        itemRow.innerHTML = '';
     displayItems(basketball);
 })
 
 document.getElementById("football-category").addEventListener("click", function () {
-    if (itemRow.hasChildNodes())
-        itemRow.innerHTML = '';
     displayItems(football);
 })
 
 document.getElementById("badminton-category").addEventListener("click", function () {
-    if (itemRow.hasChildNodes())
-        itemRow.innerHTML = '';
     displayItems(badminton);
 })

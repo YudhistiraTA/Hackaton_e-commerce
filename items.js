@@ -29,55 +29,55 @@ const basketball = [
 const football = [
     {
         name: "Football",
-        price: 215400,
-        img_src: "assets/basket_bola.jpg",
+        price: 250000,
+        img_src: "assets/soccer-ball.jpeg",
     },
     {
         name: "Football Shoes",
-        price: 1383200,
-        img_src: "assets/basket_sepatu.jpg",
+        price: 1450000,
+        img_src: "assets/soccer-shoes.jpg",
     },
     {
-        name: "Football Shorts",
-        price: 80000,
-        img_src: "assets/basket_celana.png",
-    },
-    {
-        name: "Football Shirt",
-        price: 34000,
-        img_src: "assets/basket_kaos.jpg",
+        name: "Football Glove",
+        price: 450000,
+        img_src: "assets/soccer-glove.jpg",
     },
     {
         name: "Football Jersey",
-        price: 99000,
-        img_src: "assets/basket_jersey.png",
+        price: 150000,
+        img_src: "assets/soccer-jersey.jpg",
+    },
+    {
+        name: "Football Shin Guard",
+        price: 125000,
+        img_src: "assets/soccer-shin-guard.jpg",
     },
 ];
 
 const badminton = [
     {
         name: "Shuttlecock",
-        price: 215400,
-        img_src: "assets/basket_bola.jpg",
+        price: 100000,
+        img_src: "assets/badminton-shuttlecock.jpg",
     },
     {
         name: "Badminton racket",
-        price: 1383200,
-        img_src: "assets/basket_sepatu.jpg",
+        price: 550000,
+        img_src: "assets/badminton-racket.jpg",
     },
     {
         name: "Badminton shoes",
-        price: 80000,
-        img_src: "assets/basket_celana.png",
+        price: 980000,
+        img_src: "assets/badminton-shoes.jpg",
     },
     {
         name: "Badminton net",
-        price: 34000,
-        img_src: "assets/basket_kaos.jpg",
+        price: 790000,
+        img_src: "assets/badminton-net.jpg",
     },
     {
-        name: "Lapangan",
-        price: 99000,
-        img_src: "assets/basket_jersey.png",
+        name: "Grip tape",
+        price: 250000,
+        img_src: "assets/badminton-griptape.jpg",
     },
 ];

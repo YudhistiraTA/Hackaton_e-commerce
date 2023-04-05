@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HACKSTORE Main Page</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
 
@@ -28,27 +29,32 @@
         </a>
     </header>
     <main>
-        <table>
-            <tr>
-                <th id="basketball-category" class="selected-category" onclick="selection_toggler(this)">
-                    Basketball
-                </th>
-                <th id="football-category" onclick="selection_toggler(this)">
-                    Football
-                </th>
-                <th id="badminton-category" onclick="selection_toggler(this)">
-                    Badminton
-                </th>
-            </tr>
-        </table>
-        <table id="item-table" class="item-table">
-            <tbody>
-                <tr id="item-row"></tr>
-            </tbody>
-        </table>
+        <div class="grid-container">
+            <div id="basketball-category" class="selected-category grid-item" onclick="selection_toggler(this)">
+                Basketball
+            </div>
+            <div id="football-category" class="grid-item" onclick="selection_toggler(this)">
+                Football
+            </div>
+            <div id="badminton-category" class="grid-item" onclick="selection_toggler(this)">
+                Badminton
+                </div>
+            </div>
+        <div id="item-table" class="item-table"></div>
         <script src="items.js"></script>
         <script src="scripts.js"></script>
     </main>
+    <footer class="footer-area">
+        <div class="footer-container">    
+            <div class="footer-text"><p>©2023</p></div>
+            <div class="social-media">
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+    </footer>
 </body>
 
 </html>

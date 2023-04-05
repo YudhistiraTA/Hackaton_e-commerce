@@ -1,9 +1,13 @@
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .top-container {
-    background-color: rgb(255, 113, 113);
+    /* background-color: rgb(255, 113, 113); */
+    background-image: linear-gradient(to bottom right, salmon, rgb(185, 61, 61));
     width: 100vw;
     height: 150px;
     display: flex;
@@ -79,18 +83,24 @@ body {
 main {
     display: flex;
     padding-top: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 0px 100px;
     justify-content: center;
     flex-direction: column;
+    flex-grow: 1;
 }
 
-table {
+.grid-container {
     border-spacing: 20px;
-    margin: auto;
+    /* margin: auto; */
+    /* margin-top: -150px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-table th {
+.grid-item {
+    display: flex;
+    margin: 5px;
     padding: 100px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -102,14 +112,14 @@ table th {
     border: 5px solid rgb(255, 113, 113);
 }
 
-table th:hover {
+.grid-item:hover {
     background-color: white;
     color: rgb(255, 113, 113);
     transition: 0.2s ease;
-    scale: 1.1;
+    scale: 1.05;
 }
 
-table th:active {
+.grid-item:active {
     scale: 1;
 }
 
@@ -120,13 +130,17 @@ table th:active {
 
 .item-table {
     width: 100%;
-    border-collapse: collapse;
+    /* margin: auto; */
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .item-row {
+    width: 100vw;
     display: flex;
     justify-content: space-around;
-    width: 100vw;
 }
 
 .card {
@@ -139,6 +153,7 @@ table th:active {
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
 }
 
 .card:hover {
@@ -165,4 +180,105 @@ table th:active {
 
 .card-price {
     color: #f00;
+}
+
+/* Detail item */
+
+.item-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.item-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.item-image {
+    border: 1px solid seagreen;
+    width: 30%;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.item-content {
+    font-family: Helvetica, sans-serif;
+}
+
+.item-text {
+    width: 55%;
+}
+
+#item-image {
+    width: 100%;
+
+}
+
+li {
+    list-style-type: none;
+    font-family: Helvetica, sans-serif;
+}
+
+.item-title {
+    font-size: 3em;
+}
+
+.item-price {
+    font-size: 2em;
+    color: salmon;
+    margin: 20px 0px;
+}
+
+.item-desc {
+    margin: 20px 0px;
+}
+
+.buy-btn {
+    font-family: Helvetica, sans-serif;
+    margin-left: 40px;
+    background-color: salmon;
+    border: none;
+    scale: 2;
+    border-radius: 5px;
+}
+
+.footer-area {
+    /* border: 1px solid seagreen; */
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+}
+
+.footer-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(254, 202, 202, 0.385);
+    padding: 0px 50px;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-text {
+    height: 100%;
 }

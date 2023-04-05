@@ -1,6 +1,7 @@
 function createCard(item) {
     const card = document.createElement("div");
     card.className = "card";
+    card.setAttribute("onclick", `redirectTo(${item.id})`);
 
     const img = document.createElement("img");
     img.src = item.img_src;
@@ -19,7 +20,7 @@ function createCard(item) {
         }
         tempArr.push(tempStr[i]);
     }
-    itemPrice = tempArr.reverse().join("");
+    let itemPrice = tempArr.reverse().join("");
     cardPrice.className = "card-price";
     cardPrice.textContent = `Rp. ${itemPrice}`;
 
@@ -30,12 +31,14 @@ function createCard(item) {
     return card;
 }
 
-const itemRow = document.querySelector("#item-row");
+const itemRow = document.querySelector("#item-table");
 
 function displayItems(items) {
+    while (itemRow.firstChild)
+        itemRow.removeChild(itemRow.firstChild);
     items.forEach((item) => {
         const card = createCard(item);
-        const tableCell = document.createElement("td");
+        const tableCell = document.createElement("div");
         tableCell.appendChild(card);
         itemRow.appendChild(tableCell);
     });
@@ -50,19 +53,17 @@ function selection_toggler(selected_category) {
 
 displayItems(basketball);
 document.getElementById("basketball-category").addEventListener("click", function () {
-    if (itemRow.hasChildNodes())
-        itemRow.innerHTML = '';
     displayItems(basketball);
 })
 
 document.getElementById("football-category").addEventListener("click", function () {
-    if (itemRow.hasChildNodes())
-        itemRow.innerHTML = '';
     displayItems(football);
 })
 
 document.getElementById("badminton-category").addEventListener("click", function () {
-    if (itemRow.hasChildNodes())
-        itemRow.innerHTML = '';
     displayItems(badminton);
 })
+
+function redirectTo(id) {
+    window.location.href = `display-items.html?itemId=${id}`;
+}

@@ -1,6 +1,7 @@
 function createCard(item) {
     const card = document.createElement("div");
     card.className = "card";
+    card.setAttribute("onclick", `redirectTo(${item.id})`);
 
     const img = document.createElement("img");
     img.src = item.img_src;
@@ -62,3 +63,7 @@ document.getElementById("football-category").addEventListener("click", function 
 document.getElementById("badminton-category").addEventListener("click", function () {
     displayItems(badminton);
 })
+
+function redirectTo(id) {
+    window.location.href = `display-items.html?itemId=${id}`;
+}

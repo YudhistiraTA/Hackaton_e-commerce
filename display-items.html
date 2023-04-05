@@ -45,8 +45,15 @@
 
             </div>
         </section>
-        <div class="grid-container" style="margin-top: 20px">
-            <p class="grid-item">Buy</p>
+        <div class="buttons-row">
+            <div class="counter">
+                <div id="decrement-btn" class="counter-btn disabled" onclick="decrement()">-</div>
+                <span id="counter-value" class="counter-value">1</span>
+                <div id="increment-btn" class="counter-btn" onclick="increment()">+</div>
+            </div>
+            <div class="grid-container" style="margin-top: 20px">
+                <p class="grid-item">Buy</p>
+            </div>
         </div>
     </main>
     <footer class="footer-area">

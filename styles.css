@@ -282,3 +282,44 @@ li {
 .footer-text {
     height: 100%;
 }
+
+.buttons-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid salmon;
+    margin-top: 20px;
+    padding: 3px;
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+}
+
+.counter-btn {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    user-select: none;
+    color: salmon;
+}
+
+.counter-btn:hover {
+    background-color: #f6f1f1;
+    transition: 0.2s ease;
+}
+
+.counter-btn.disabled {
+    cursor: not-allowed;
+    background-color: #ccc;
+}
+
+.counter-value {
+    margin: 0 20px;
+}

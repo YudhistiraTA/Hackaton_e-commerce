@@ -20,7 +20,7 @@ function createCard(item) {
         }
         tempArr.push(tempStr[i]);
     }
-    itemPrice = tempArr.reverse().join("");
+    let itemPrice = tempArr.reverse().join("");
     cardPrice.className = "card-price";
     cardPrice.textContent = `Rp. ${itemPrice}`;
 

@@ -16,18 +16,21 @@ const basketball = [
         name: "Basketball Shorts",
         price: 80000,
         img_src: "assets/basket_celana.png",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, voluptatum!"
     },
     {
         id: 3,
         name: "Basketball Shirt",
         price: 34000,
         img_src: "assets/basket_kaos.jpg",
+        description: "Basketball Shirt ipsum dolor sit amet, Ukuran All size adipisicing elit. Non quisquam ullam quo nobis cumque quaerat unde delectus."
     },
     {
         id: 4,
         name: "Basketball Jersey",
         price: 99000,
         img_src: "assets/basket_jersey.png",
+        description: "Jersey ipsum dolor sit amet, consectetur adipisicing Bekas Kobe. Non quisquam ullam quo nobis cumque quaerat unde delectus."
     },
 ];
 

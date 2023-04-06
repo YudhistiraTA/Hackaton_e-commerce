@@ -11,7 +11,7 @@ const basketball = [
         name: "Basketball Shoes",
         price: 1383200,
         img_src: "assets/basket_sepatu.jpg",
-        description: `Reprehenderit sequi nulla repudiandae laborum. Et inventore voluptas reiciendis qui. Et ut maxime aperiam.`
+        description: `Basketball Shoes sequi nulla repudiandae laborum. Et inventore voluptas reiciendis qui. Et ut maxime aperiam.`
     },
     {
         id: 2,
